@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{ github.event.repository.name }}"
-      - run: echo "${{ github.event.pull_request.title }}"
+      - run: echo "${{ runner.name }}"
