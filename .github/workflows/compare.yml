@@ -4,7 +4,6 @@ jobs:
   compare:
     runs-on: ubuntu-latest
     steps:
-      - run: printenv | grep "FUNC"
-        env: 
-          CONTAIN_FUNC: ${{ contains('hello', 'ell') }}
-          STARTS_WITH_FUNC: ${{ startsWith('hello', 'hel') }}
+      - run: echo "${FORMAT}"
+        env:
+          FORMAT: ${{ format('Hello, {0}!', 'world') }}
