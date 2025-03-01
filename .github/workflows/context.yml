@@ -1,9 +1,9 @@
-name: Context
-on: push
+# name: Context
+# on: push
 
-jobs:
-  context:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "${{ github.event.repository.name }}"
-      - run: echo "${{ runner.name }}"
+# jobs:
+#   context:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: echo "${{ github.event.repository.name }}"
+#       - run: echo "${{ runner.name }}"

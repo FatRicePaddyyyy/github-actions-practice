@@ -1,23 +1,23 @@
-name: Manual
-on:
-  workflow_dispatch:
-    inputs:
-      greeting:
-        type: string
-        default: Hello
-        required: true
-        description: "Greeting to display"
-      log_level:
-        type: choice
-        options:
-          - info
-          - debug
-          - warn
-          - error
+# name: Manual
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       greeting:
+#         type: string
+#         default: Hello
+#         required: true
+#         description: "Greeting to display"
+#       log_level:
+#         type: choice
+#         options:
+#           - info
+#           - debug
+#           - warn
+#           - error
 
-jobs:
-  run:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "${{ inputs.greeting }}"
-      - run: echo "${{ inputs.log_level }}"
+# jobs:
+#   run:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: echo "${{ inputs.greeting }}"
+#       - run: echo "${{ inputs.log_level }}"
