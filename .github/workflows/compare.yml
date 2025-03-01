@@ -4,6 +4,6 @@ jobs:
   compare:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${FORMAT}"
+      - run: echo "${CONTEXT}"
         env:
-          FORMAT: ${{ format('Hello, {0}!', 'world') }}
+          CONTEXT: ${{ toJSON(github) }}
