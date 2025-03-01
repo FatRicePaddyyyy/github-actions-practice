@@ -1,0 +1,13 @@
+name: Naming
+on: push
+jobs:
+  print:
+    name: Upser Useful Jon
+    runs-on: ubuntu-latest
+    steps:
+      - name: Amazing script
+        run: echo "Hello, world1"
+      - name: Amazing script 2
+        run: echo "Hello, world2"
+      - name: Amazing script 3
+        run: echo "Hello, world3"
