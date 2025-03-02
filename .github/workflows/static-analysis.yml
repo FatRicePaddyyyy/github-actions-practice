@@ -1,0 +1,17 @@
+name: Static Analysis
+on: push
+
+defaults:
+  run: 
+    shell: bash
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  static-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ github.workflow }}
+      - run: echo ${{ github.ref }}
