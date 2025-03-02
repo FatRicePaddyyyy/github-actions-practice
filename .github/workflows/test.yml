@@ -12,6 +12,7 @@ jobs:
           go-version: '1.22'
       - run: go test go/excellent/*.go
       - run: echo "Test passed"
+      - run: echo "Test passed"
 
 
 
