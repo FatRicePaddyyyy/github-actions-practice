@@ -6,3 +6,5 @@ func EvenOrOdd(n int) string {
 	}
 	return "odd"
 }
+
+
